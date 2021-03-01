@@ -1,3 +1,4 @@
+
 # AWS class with Test Driven Development (TDD)
 **Worke done without commits to GitHub will not be graded.**
 
@@ -8,6 +9,9 @@ There are a few tests that are not finished. And so, you will have a few tasks h
 You will make frequent commits:
 * Create one test, and make sure it fails
 * Commit to GitHub
+
+$Created new test method as testRemoveAgain() which removes the values from an index and replaces with the values in the next index.And the last index value replaced with the Integer.MINVALUE
+
 * Write your code to pass the test
 * Commit to GitHub
 ## Part 2
