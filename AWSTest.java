@@ -1,12 +1,12 @@
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class AWSTest {
 
 	private static final int FILLER_VALUE = Integer.MIN_VALUE;
-	private int[] original={1, 2, 3};
+	private final int[] original={1, 2, 3};
 	AWS originalAWS;
 	
 	@BeforeEach
@@ -118,6 +118,13 @@ class AWSTest {
 
 	
 	}
-
-
+	@Test
+	void testRemoveAgain(){
+		int[] x={10,20,30};
+		AWS aws_test=new AWS(x);
+		int removed_value=aws_test.remove(1);
+		int[] expected=aws_test.getValues();
+		assertEquals(x[2],expected[2]);
+		assertEquals(x[1],expected[1]);
+	}
 }
