@@ -124,7 +124,7 @@ class AWSTest {
 		AWS aws_test=new AWS(x);
 		int removed_value=aws_test.remove(1);
 		int[] expected=aws_test.getValues();
-		assertEquals(x[2],expected[2]);
 		assertEquals(x[1],expected[1]);
+		assertEquals(x[2],expected[2]);
 	}
 }
