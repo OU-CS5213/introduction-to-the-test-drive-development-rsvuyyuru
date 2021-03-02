@@ -55,5 +55,9 @@ public class AWS {
 		}
 		values = newArray;
 	}
+	public int sumToPlace(int place){
+		int[] actual=getValues();
+		return actual[place];
+	}
 
 }
