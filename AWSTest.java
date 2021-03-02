@@ -124,7 +124,16 @@ class AWSTest {
 		AWS aws_test=new AWS(x);
 		int removed_value=aws_test.remove(1);
 		int[] expected=aws_test.getValues();
-		assertEquals(x[1],expected[1]);
-		assertEquals(x[2],expected[2]);
+		assertEquals(x[1],removed_value);
+	}
+	@Test
+		//To find sum of values until the mentioned position
+	void testSumToPlace(){
+		int[] x = {1,2,3};
+		int position=1;
+		int actual_SumToPlace=3;
+		AWS aws_test = new AWS(x);
+		int expected_SumToPlace = aws_test.sumToPlace(position);
+		assertEquals(actual_SumToPlace,expected_SumToPlace);
 	}
 }
