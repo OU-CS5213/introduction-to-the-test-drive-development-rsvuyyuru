@@ -12,6 +12,7 @@ You will make frequent commits:
 
 $Created new test method as testRemoveAgain() which removes the values from an index and replaces with the values in the next index.And the last index value replaced with the Integer.MINVALUE
 
+$ Created new failed test method testSumToPlace() that calculates the sum of elements upto the mentioned position in the list and also implemented new method sumToPlace()
 * Write your code to pass the test
 * Commit to GitHub
 ## Part 2
