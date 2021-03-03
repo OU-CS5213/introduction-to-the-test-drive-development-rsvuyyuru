@@ -129,11 +129,17 @@ class AWSTest {
 	@Test
 		//To find sum of values until the mentioned position
 	void testSumToPlace(){
-		int[] x = {1,2,3};
-		int position=1;
-		int actual_SumToPlace=3;
+		int[] x = {1,3,4,5};
+		//Sum of the array upto position 1
+		int position_1=1;
+		int actual_SumToPlace_1=4;
 		AWS aws_test = new AWS(x);
-		int expected_SumToPlace = aws_test.sumToPlace(position);
-		assertEquals(actual_SumToPlace,expected_SumToPlace);
+		int expected_SumToPlace_1 = aws_test.sumToPlace(position_1);
+		assertEquals(actual_SumToPlace_1,expected_SumToPlace_1);
+		//Sum of the array upto position 3
+		int position_2=3;
+		int actual_Sum_2=13;
+		int expected_Sum_2=aws_test.sumToPlace(position_2);
+		assertEquals(actual_Sum_2,expected_Sum_2);
 	}
 }
