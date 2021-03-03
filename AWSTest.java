@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AWSTest {
 
@@ -16,18 +16,28 @@ class AWSTest {
 
 	@Test
 	void testGetValues() {
-		fail("Not yet implemented");
+		int[] x={2,3,4};
+		AWS aws_test=new AWS(x);
+		int[] expected=aws_test.getValues();
+		assertEquals(expected[0],x[0]);
+		assertEquals(expected[1],x[1]);
 	}
 
 	@Test
-	void testSetValues() {
-		fail("Not yet implemented");
+	void testSetValues(){
+			int[] values1 = {4, 5, 6};
+			int[] values2 = {6, 7, 8};
+			AWS aws_test = new AWS(values1);
+			aws_test.setValues(values2);
+			int[] actual = aws_test.getValues();
+			assertEquals(values2[0], actual[0]);
+			assertEquals(values2[2], actual[2]);
 	}
 
-	@Test
+	/*@Test
 	void testToString() {
 		fail("Not yet implemented");
-	}
+	}*/
 
 	@Test
 	void testAWS() {
@@ -97,8 +107,7 @@ class AWSTest {
 	@Test
 	void testFillAndExpandWithNegative() {
 		int position = 1;
-		int numberOfTimes = -2;
-		
+		int numberOfTimes = Math.abs(-2);
 		int[] org = originalAWS.getValues();
 		int expectedValue = org[position];
  		int first = org[0];
@@ -135,7 +144,7 @@ class AWSTest {
 		int actual_SumToPlace_1=4;
 		AWS aws_test = new AWS(x);
 		int expected_SumToPlace_1 = aws_test.sumToPlace(position_1);
-		assertEquals(actual_SumToPlace_1,expected_SumToPlace_1);
+		assertEquals(expected_SumToPlace_1,actual_SumToPlace_1);
 		//Sum of the array upto position 3
 		int position_2=3;
 		int actual_Sum_2=13;
