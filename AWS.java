@@ -58,7 +58,14 @@ public class AWS {
 	//Added New method which returns the sum of the elements upto the mentioned position.
 	public int sumToPlace(int place){
 		int[] actual=getValues();
-		return actual[place];
+		int sum = 0;
+		if (place > actual.length){
+			return 0;
+		}
+		for(int i=0; i<=place; ++i){
+			sum+=actual[i];
+		}
+		return sum;
 	}
 
 }
