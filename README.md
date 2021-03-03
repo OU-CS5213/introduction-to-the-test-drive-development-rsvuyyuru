@@ -12,9 +12,12 @@ You will make frequent commits:
 
 $Created new test method as testRemoveAgain() which removes the values from an index and replaces with the values in the next index.And the last index value replaced with the Integer.MINVALUE
 
-$ Created new failed test method testSumToPlace() that calculates the sum of elements upto the mentioned position in the list and also implemented new method sumToPlace()
+$ Created new failed test method testSumToPlace() that calculates the sum of elements upto the mentioned position in the list and also implemented new method sumToPlace() and committed to git using git commands
+
 * Write your code to pass the test
 * Commit to GitHub
+
+$Modified the sumToPlace() method in AWS.java to pass the tests mentioned in the testSumToPlace() in AWSTest.java and commited to git using git commands
 ## Part 2
 * [ ] Create a GitHub action to run your tests from Part 1
 ## Part 3 
