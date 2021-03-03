@@ -18,6 +18,7 @@ $ Created new failed test method testSumToPlace() that calculates the sum of ele
 * Commit to GitHub
 
 $Modified the sumToPlace() method in AWS.java to pass the tests mentioned in the testSumToPlace() in AWSTest.java and commited to git using git commands
+$Implemented all the unfinished tests.
 ## Part 2
 * [ ] Create a GitHub action to run your tests from Part 1
 ## Part 3 
