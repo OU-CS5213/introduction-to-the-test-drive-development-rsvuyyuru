@@ -4,14 +4,14 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-
+  test:
+    name: running unitests
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +21,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: |
-        cd introduction-to-the-test-drive-development-rsvuyyuru/
-        mvn test
+      run: javac AWSTest.java
+    - name: run build file
+      run: java AWSTest
