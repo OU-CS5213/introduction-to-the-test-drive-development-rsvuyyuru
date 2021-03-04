@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AWSTest" time="0.047" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AWSTest" time="0.061" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="E:\Programs\IntelliJ IDEA 2020.3.2\JDK\bin"/>
-    <property name="sun.java.command" value="C:\Users\karpuram\AppData\Local\Temp\surefire3504123311130321890\surefirebooter7232728563686104263.jar C:\Users\karpuram\AppData\Local\Temp\surefire3504123311130321890 2021-03-03T23-44-35_173-jvmRun1 surefire9844613950239286976tmp surefire_07877142129403839333tmp"/>
+    <property name="sun.java.command" value="C:\Users\karpuram\AppData\Local\Temp\surefire14658378426788332551\surefirebooter1875164253939886150.jar C:\Users\karpuram\AppData\Local\Temp\surefire14658378426788332551 2021-03-04T00-09-45_609-jvmRun1 surefire7402404258931244761tmp surefire_0631792425396554151tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\Ramya\SEP\introduction-to-the-test-drive-development-rsvuyyuru\target\test-classes;E:\Ramya\SEP\introduction-to-the-test-drive-development-rsvuyyuru\target\classes;C:\Users\karpuram\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.1\junit-jupiter-api-5.7.1.jar;C:\Users\karpuram\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\karpuram\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\karpuram\.m2\repository\org\junit\platform\junit-platform-commons\1.7.1\junit-platform-commons-1.7.1.jar;C:\Users\karpuram\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\karpuram\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\karpuram\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.1\junit-jupiter-engine-5.7.1.jar;C:\Users\karpuram\.m2\repository\org\junit\platform\junit-platform-engine\1.7.1\junit-platform-engine-1.7.1.jar;C:\Users\karpuram\.m2\repository\org\junit\vintage\junit-vintage-engine\5.7.1\junit-vintage-engine-5.7.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\karpuram\AppData\Local\Temp\surefire3504123311130321890\surefirebooter7232728563686104263.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\karpuram\AppData\Local\Temp\surefire14658378426788332551\surefirebooter1875164253939886150.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -56,13 +56,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testFillAndExpandWithNegative" classname="AWSTest" time="0.032"/>
-  <testcase name="testAWS" classname="AWSTest" time="0"/>
-  <testcase name="testSumToPlace" classname="AWSTest" time="0"/>
-  <testcase name="testRemoveAgain" classname="AWSTest" time="0"/>
-  <testcase name="testFillAndExpand" classname="AWSTest" time="0"/>
-  <testcase name="testRemoveBiggerThan" classname="AWSTest" time="0"/>
-  <testcase name="testSetValues" classname="AWSTest" time="0"/>
-  <testcase name="testGetValues" classname="AWSTest" time="0"/>
-  <testcase name="testRemove" classname="AWSTest" time="0"/>
+  <testcase name="testFillAndExpandWithNegative" classname="AWSTest" time="0.031"/>
+  <testcase name="testAWS" classname="AWSTest" time="0.001"/>
+  <testcase name="testSumToPlace" classname="AWSTest" time="0.001"/>
+  <testcase name="testRemoveAgain" classname="AWSTest" time="0.001"/>
+  <testcase name="testFillAndExpand" classname="AWSTest" time="0.001"/>
+  <testcase name="testRemoveBiggerThan" classname="AWSTest" time="0.001"/>
+  <testcase name="testStepMultiplier" classname="AWSTest" time="0.002"/>
+  <testcase name="testSetValues" classname="AWSTest" time="0.001"/>
+  <testcase name="testGetValues" classname="AWSTest" time="0.001"/>
+  <testcase name="testRemove" classname="AWSTest" time="0.001"/>
 </testsuite>

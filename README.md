@@ -29,5 +29,10 @@ $Created github actions using Java with Maven and built the project as Maven Pro
 * [ ] You will use the TDD technique for this part, remember to create a test before you implement the method; commit to GitHub every working change you make
 * [ ] Create a method **removeBiggerThan(int threshold)** the AWS class that will remove all values bigger than a **threshold** that you send and return the number of removed values; use FILLER_VALUE to replace removed values
 * [ ] Create unit tests for **removeBiggerThan(int threshold)**
+
+$ Created method removeBiggerThan and also written the unit test cases through the TDD technique
+
 * [ ] Create a method **stepMultiplier()** in the AWS class that will multiply all values less than 10 by 2, and all values that are less than 20 and bigger than 10 by 4, and all values that are less than 100 and bigger than 20 by 100;
 * [ ] Create a unit tests for **stepMultiplier()**
+
+$Created stepMultiplier method and also wrote the unit test cases through the TDD technique

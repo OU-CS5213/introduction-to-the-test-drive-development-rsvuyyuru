@@ -177,13 +177,16 @@ class AWSTest {
         int[] x={3,6,16,40,80};
         AWS aws_test=new AWS(x);
         int[] result=aws_test.stepMultipier();
-        int expected1=3*3;
+        int expected1=3*2;
         int expected3=16*4;
         int expected5=80*100;
         //TDD
-        assertEquals(x[0],expected1);
-        assertEquals(x[2],expected3);
-        assertEquals(x[4],expected5);
-        assertEquals(x[0],result[0]);
+//        assertEquals(x[0],expected1);
+//        assertEquals(x[2],expected3);
+//        assertEquals(x[4],expected5);
+//        assertEquals(x[0],result[0]);
+        assertEquals(expected1,result[0]);
+        assertEquals(expected3,result[2]);
+        assertEquals(expected5,result[4]);
     }
 }

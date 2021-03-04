@@ -82,6 +82,18 @@ public class AWS {
     //Method that step multiplies the values between different ranges
     public int[] stepMultipier(){
         int[] original=getValues();
+        for(int i=0;i<original.length;i++){
+            if(original[i]>0&& original[i]<10){
+                original[i]=original[i]*2;
+            }
+            else if(original[i]>=10&& original[i]<20){
+                original[i]=original[i]*4;
+            }
+            else if(original[i]>=20&& original[i]<100){
+                original[i]=original[i]*100;
+            }
+
+        }
         return original;
     }
 }
