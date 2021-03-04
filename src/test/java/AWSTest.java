@@ -150,4 +150,17 @@ class AWSTest {
         int expected_Sum_2=aws_test.sumToPlace(position_2);
         assertEquals(actual_Sum_2,expected_Sum_2);
     }
+    @Test
+    //To remove values bigger than the threshold value
+    void testRemoveBiggerThan( ){
+        int x[]={2,3,4,6,10};
+        int threshold=5;
+        AWS aws_test=new AWS(x);
+        int removed=aws_test.removeBiggerThan(threshold);
+        int[] after_Removal={2,3,4,Integer.MIN_VALUE,Integer.MIN_VALUE};
+        //TDD test cases
+        assertEquals(x[1],after_Removal[1]);
+        assertEquals(x[3],after_Removal[3]);
+
+    }
 }

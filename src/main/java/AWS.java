@@ -66,5 +66,16 @@ public class AWS {
         }
         return sum;
     }
-
+    //Added method that returns the count of the removed values that are bigger than threshold value
+    public int removeBiggerThan(int threshold){
+        int[] value=getValues();
+        int removedValues=0;
+        for(int i=0;i<value.length;i++){
+            if(value[i]>threshold){
+                removedValues+=1;
+            }
+        }
+        values= value;
+       return removedValues;
+    }
 }
