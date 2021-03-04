@@ -73,9 +73,10 @@ public class AWS {
         for(int i=0;i<value.length;i++){
             if(value[i]>threshold){
                 removedValues+=1;
+                value[i]=FILLER_VALUE;
             }
         }
-        values= value;
+
        return removedValues;
     }
 }

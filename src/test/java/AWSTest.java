@@ -155,12 +155,20 @@ class AWSTest {
     void testRemoveBiggerThan( ){
         int x[]={2,3,4,6,10};
         int threshold=5;
+        int toBeRemoved=2;
         AWS aws_test=new AWS(x);
+        int[] original= aws_test.getValues();
         int removed=aws_test.removeBiggerThan(threshold);
-        int[] after_Removal={2,3,4,Integer.MIN_VALUE,Integer.MIN_VALUE};
+        int[] afterRemoval= aws_test.getValues();
+        //int[] after_Removal={2,3,4,Integer.MIN_VALUE,Integer.MIN_VALUE};
         //TDD test cases
-        assertEquals(x[1],after_Removal[1]);
-        assertEquals(x[3],after_Removal[3]);
+        //assertEquals(x[1],after_Removal[1]);
+        //assertEquals(x[3],after_Removal[3]);
+
+        assertEquals(removed,toBeRemoved);
+        assertEquals(original[1],afterRemoval[1]);
+        assertEquals(original[3],afterRemoval[3]);
+        assertEquals(original[4],afterRemoval[4]);
 
     }
 }
