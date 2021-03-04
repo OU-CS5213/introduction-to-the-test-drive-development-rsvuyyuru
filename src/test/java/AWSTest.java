@@ -171,4 +171,19 @@ class AWSTest {
         assertEquals(original[4],afterRemoval[4]);
 
     }
+    @Test
+    //To step multiply the values of the array
+    void testStepMultiplier(){
+        int[] x={3,6,16,40,80};
+        AWS aws_test=new AWS(x);
+        int[] result=aws_test.stepMultipier();
+        int expected1=3*3;
+        int expected3=16*4;
+        int expected5=80*100;
+        //TDD
+        assertEquals(x[0],expected1);
+        assertEquals(x[2],expected3);
+        assertEquals(x[4],expected5);
+        assertEquals(x[0],result[0]);
+    }
 }

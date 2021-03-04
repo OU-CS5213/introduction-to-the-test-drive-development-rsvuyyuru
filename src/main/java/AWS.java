@@ -79,4 +79,9 @@ public class AWS {
 
        return removedValues;
     }
+    //Method that step multiplies the values between different ranges
+    public int[] stepMultipier(){
+        int[] original=getValues();
+        return original;
+    }
 }
