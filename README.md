@@ -18,9 +18,13 @@ $ Created new failed test method testSumToPlace() that calculates the sum of ele
 * Commit to GitHub
 
 $Modified the sumToPlace() method in AWS.java to pass the tests mentioned in the testSumToPlace() in AWSTest.java and commited to git using git commands
-$Implemented all the unfinished tests.
+
+$Implemented the unfinished tests.
 ## Part 2
 * [ ] Create a GitHub action to run your tests from Part 1
+
+$Created github actions using Java with Maven and built the project as Maven Project. Created a pom.xml file which has tags of properties, build plugins, dependencies. Also wrote an yml file which has the actions related to run command which executes the tests in the AWSTest file
+
 ## Part 3 
 * [ ] You will use the TDD technique for this part, remember to create a test before you implement the method; commit to GitHub every working change you make
 * [ ] Create a method **removeBiggerThan(int threshold)** the AWS class that will remove all values bigger than a **threshold** that you send and return the number of removed values; use FILLER_VALUE to replace removed values
